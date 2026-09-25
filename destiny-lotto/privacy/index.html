@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>운명의 로또 개인정보처리방침</title>
+  <title>사주의 수 개인정보처리방침</title>
   <style>
     :root { color-scheme: light; }
     * { box-sizing: border-box; }
@@ -16,74 +16,55 @@
     ul { padding-left: 1.4em; margin: 0 0 24px; }
     a { color: #20354a; text-underline-offset: 3px; }
     code { font-family: ui-monospace, Consolas, monospace; font-size: .92em; }
-    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #e9e8e3; color: #52606c; }
     @media (max-width: 600px) { main { width: 100%; margin: 0; padding: 28px 20px 48px; border: 0; border-radius: 0; } }
   </style>
 </head>
 <body>
   <main>
-    <h1>운명의 로또 개인정보처리방침</h1>
+    <h1>사주의 수 개인정보처리방침</h1>
     <ul>
-      <li>시행일: 2026년 9월 21일</li>
       <li>운영자: 놀소록 · NOLSOROK</li>
+      <li>앱 식별자: <code>com.destinylotto.app</code></li>
       <li>개인정보 문의: <a href="mailto:hello.nolsorok@gmail.com">hello.nolsorok@gmail.com</a></li>
+      <li>시행일: <strong>2026년 9월 25일</strong></li>
       <li>공개 URL: https://nolsorok.github.io/destiny-lotto/privacy/</li>
     </ul>
-    <p>이 방침은 운명의 로또(<code>com.destinylotto.app</code>) Market Validation Release의 실제 앱 동작을 설명합니다. 이 출시판은 콘텐츠를 무료로 제공하며, 인앱결제와 앱 코드의 광고 요청·표시는 비활성화되어 있습니다.</p>
+    <p>이 방침은 현재 앱의 데이터 처리 방식을 설명합니다.</p>
 
-    <section aria-labelledby="section-1">
-      <h2 id="section-1">1. 처리하는 정보와 목적</h2>
-      <p>사용자가 입력하는 생년월일, 양력·음력과 윤달 여부, 출생시간 또는 모름 여부, 성별을 사주·운세·추천번호 및 추천 시점 계산에 사용합니다. 사주·운세 분석 결과와 추천번호도 앱 안에서 생성합니다. 로그인이나 계정 생성은 없습니다.</p>
-    </section>
+    <section><h2>1. 처리 목적</h2><p>사주의 수는 사용자가 입력한 정보를 사주·운세·오늘의 숫자·숫자 흐름 및 조합 풀이를 기기에서 제공하는 데 사용합니다. 사용자가 선택적으로 동의하면 Firebase Analytics로 기능 이용 현황을 분석하여 서비스를 개선합니다. 계정 생성이나 로그인 기능은 없습니다.</p></section>
 
-    <section aria-labelledby="section-2">
-      <h2 id="section-2">2. 기기 내 저장과 추천 기록</h2>
-      <p>사주 프로필은 기기 내부 SharedPreferences에 저장됩니다. 추천 History에는 로또·연금복권 추천번호, 회차와 추천 시점 등의 snapshot이 저장될 수 있으며, 프로필 원문 대신 중복 관리용 fingerprint 및 결정성 정보가 포함될 수 있습니다. History는 앱 정책에 따라 최대 100건까지 유지됩니다. 앱의 사주·운세·추천 계산과 이 기록 저장은 기기에서 이루어지며, 놀소록의 별도 서버로 프로필이나 History를 전송·보관하는 앱 코드는 없습니다.</p>
-    </section>
+    <section><h2>2. 기기에 저장하는 정보</h2><p>생년월일, 양력·음력 및 윤달 여부, 출생시간 또는 모름 여부, 성별과 사주 계산에 필요한 설정값은 기기의 앱 전용 SharedPreferences에 저장됩니다. 사용 통계 동의 상태도 <code>analytics_consent_v1</code>에 저장됩니다. 기존 버전에서 생성된 추천 기록과 관련 로컬 데이터가 남아 있을 수 있으나 현재 앱은 복권·QR 기능을 제공하지 않습니다.</p></section>
 
-    <section aria-labelledby="section-3">
-      <h2 id="section-3">3. 카메라와 복권 QR</h2>
-      <p>카메라 권한은 실물 복권 QR 코드를 인식하는 데 사용합니다. QR 영상·사진을 앱 파일로 저장하거나 놀소록 서버로 업로드하지 않습니다. QR 원문과 파싱된 구매 게임 번호를 영구 저장하는 앱 코드도 없습니다. QR에서 읽은 회차번호로 공식 당첨결과를 조회한 뒤, 구매 게임과 당첨번호의 비교는 앱에서 수행합니다. QR URL 원문이나 구매 게임 번호 전체를 공식 결과 조회 요청에 넣지 않습니다.</p>
-    </section>
+    <section><h2>3. 기기 내 계산</h2><p>사주 원국, 오행·용신·희신, 오늘·주간·월간 운세, Daily Number, 입력 숫자의 흐름과 조합 풀이는 기기에서 계산합니다. 사주 프로필 원문이나 사용자가 입력한 숫자 원문을 놀소록이 운영하는 별도 서버로 전송하는 앱 코드는 없습니다.</p></section>
 
-    <section aria-labelledby="section-4">
-      <h2 id="section-4">4. 외부 공식 당첨결과 조회</h2>
-      <p>앱은 공개된 복권 당첨결과 확인을 위해 <code>https://www.dhlottery.co.kr</code>에 HTTPS 요청을 보낼 수 있습니다. 로또 조회 요청에는 조회할 <strong>회차번호</strong>가 URL query parameter로 포함됩니다. 사주 프로필 전체, 추천번호 전체, History 전체 또는 QR에서 읽은 구매 게임 번호를 이 요청에 첨부하는 앱 코드는 없습니다. 다만 일반적인 네트워크 요청 과정에서 서버가 접속 정보(IP 주소 등)를 처리할 수 있으며, 놀소록은 동행복권 서버의 처리 방식을 통제하지 않습니다.</p>
-      <p>조회는 사용자가 History의 결과 확인 또는 QR 확인을 이용할 때뿐 아니라, 앱 시작·resume 시 과거 Lotto History가 있으면 결과 최신화를 시도하는 과정에서도 발생할 수 있습니다. 공식 결과가 제공되지 않거나 네트워크 오류가 나면 결과 확인이 제한될 수 있습니다.</p>
-    </section>
+    <section><h2>4. Firebase Analytics 사용</h2><p>Firebase Analytics는 Google이 제공하는 분석 서비스입니다. 앱은 수집을 기본 OFF로 설정하며, 사용자가 동의한 경우에만 활성화합니다. 동의한 경우 앱 인스턴스 식별자, 기기·OS 및 앱 정보, 세션·앱 실행 정보, IP 주소에서 유추한 대략적 지역 등 Firebase의 기본 분석 정보가 처리될 수 있습니다. SDK가 자동 기록하는 앱 수명주기·화면 관련 이벤트도 포함될 수 있습니다.</p></section>
 
-    <section aria-labelledby="section-5">
-      <h2 id="section-5">5. Google 광고·동의 SDK</h2>
-      <p>현재 release 패키지에는 Google Mobile Ads SDK와 UMP가 포함되어 있습니다. 그러나 Market Validation Release의 앱 코드는 광고를 표시하거나 production 광고 요청, UMP 동의 요청, <code>MobileAds.initialize</code>, 보상형 광고 사전 로드·표시를 실행하지 않습니다. 앱 코드는 사주 입력정보, 사주·운세 결과, 추천번호 또는 History를 광고 SDK에 직접 전달하지 않습니다.</p>
-      <p>광고 SDK 의존성에 의해 광고 ID(<code>AD_ID</code>) 및 Android AdServices 관련 권한과 네이티브 구성요소가 release manifest에 포함됩니다. 패키지에 SDK가 포함된 사실과 앱 광고 기능이 비활성화된 사실은 별개입니다. SDK 자체의 기기·식별정보 처리 여부를 앱 코드만으로 단정할 수 없으며, Google의 공식 SDK 안내와 실제 배포 동작을 별도로 확인해야 합니다.</p>
-    </section>
+    <section><h2>5. 앱이 보내는 사용 이벤트</h2><p>앱은 동의한 경우에만 다음 기능 사용 이벤트 7종을 전송합니다: <code>home_view</code>, <code>daily_number_detail_open</code>, <code>number_flow_submit</code>, <code>number_flow_result_view</code>, <code>my_saju_view</code>, <code>weekly_fortune_view</code>, <code>monthly_fortune_view</code>. 이 커스텀 이벤트에는 별도 parameter를 넣지 않습니다. 앱 개발자는 Analytics에 User-ID나 User Property를 설정하지 않습니다. 광고 ID 수집은 앱 설정에서 비활성화하고 Android 광고 ID 권한도 제거하도록 구성합니다.</p></section>
 
-    <section aria-labelledby="section-6">
-      <h2 id="section-6">6. 권한과 백업</h2>
-      <p><code>CAMERA</code>는 QR 인식, <code>INTERNET</code>은 공식 당첨결과 조회에 사용됩니다. 광고 SDK와 WorkManager 등의 의존성에서 추가 네트워크·광고 ID·시스템 권한이 병합될 수 있으나, 이것만으로 현재 앱이 광고를 요청한다는 뜻은 아닙니다.</p>
-      <p>Android 앱 설정은 <code>allowBackup=false</code>이며, 백업·데이터 추출 규칙에서 SharedPreferences를 포함한 로컬 저장 영역을 클라우드 백업과 기기 간 전송 대상에서 제외합니다. 운영체제·제조사별 실제 동작은 해당 환경의 정책이 적용됩니다.</p>
-    </section>
+    <section><h2>6. Analytics로 보내지 않는 정보</h2><p>앱 코드는 생년월일, 출생시간, 성별, 양력·음력·윤달 여부, 사주 원국·오행·용신·희신, 운세 점수, 오늘의 숫자 실제 값, 사용자가 입력한 숫자와 조합 결과, 해석 문구, roleName/actionTags, 프로필 식별정보를 커스텀 Analytics 이벤트에 담지 않습니다. 이는 Firebase가 동의 후 처리할 수 있는 기본 분석 정보가 없다는 뜻은 아닙니다.</p></section>
 
-    <section aria-labelledby="section-7">
-      <h2 id="section-7">7. 외부 제공과 보관·삭제</h2>
-      <p>놀소록이 운영하는 별도 서버로 사주 프로필이나 추천 History를 수집하는 앱 코드는 없습니다. 제4절의 동행복권 결과 조회와 제5절의 Google SDK 포함 사실을 이 설명과 구분해야 합니다. 사용자 데이터가 어떠한 제3자와도 절대 공유되지 않는다고 단정하지 않습니다.</p>
-      <p><code>내 정보 → 앱 정보 및 안내 → 내 데이터 삭제</code>에서 저장된 사주 프로필, 추천 History, History 삭제 억제 상태와 기존 보상형 접근 marker를 삭제할 수 있습니다. 앱 삭제 또는 Android 앱 데이터 삭제 시 일반적인 앱 전용 로컬 데이터도 삭제됩니다. 별도의 공식 결과 캐시 구현은 있으나, 현재 Lotto 당첨결과 조회 경로는 메모리 캐시를 사용합니다. 데이터 삭제 후 사용자는 신규 사용자 상태로 돌아갑니다.</p>
-    </section>
+    <section><h2>7. 동의 방식과 선택권</h2><p>동의 여부를 선택하지 않은 상태와 거절한 상태에서는 Analytics 수집이 OFF입니다. 사용자는 최초 안내에서 선택하거나 <code>내 정보 → 앱 정보 및 안내 → 사용 통계 수집</code>에서 언제든 ON/OFF를 변경할 수 있습니다. 동의하지 않아도 앱의 모든 기능을 사용할 수 있습니다. OFF로 변경하면 이후 Analytics 수집이 중단됩니다.</p></section>
 
-    <section aria-labelledby="section-8">
-      <h2 id="section-8">8. 아동·서비스 성격</h2>
-      <p>앱은 복권 판매·구매·결제·당첨금 지급을 제공하거나 대행하지 않습니다. 미성년자의 실제 복권 구매를 권장하지 않습니다. 실제 구매 가능 연령과 판매 기준은 이용 지역의 법령과 공식 판매 안내를 확인해야 합니다. Google Play의 Target Audience 및 배포 연령 설정은 별도로 결정합니다.</p>
-      <p>운명의 로또는 동행복권이 제작·운영하거나 제휴한 공식 앱이 아닌 독립적인 서비스입니다. 공개된 공식 당첨결과를 조회해 안내하지만, 사주·운세 및 번호 추천은 당첨을 예측하거나 보장하지 않으며 실제 당첨확률을 높인다는 의미도 아닙니다.</p>
-    </section>
+    <section><h2>8. Google 및 다른 처리 주체</h2><p>동의 후의 Analytics 정보는 Google의 Firebase 서비스를 통해 처리됩니다. 놀소록은 사주 원문이나 입력 숫자 내용을 Google Analytics에 직접 전달하지 않으며, 별도 놀소록 서버에도 저장하지 않습니다. Google이 서비스 제공 과정에서 처리하는 정보와 Play Data Safety의 <code>수집</code>·<code>공유</code> 구분은 Google의 현재 계약·프로젝트 설정과 Play Console 기준을 게시 전 확인합니다. 앱은 현재 광고 SDK나 광고 요청 기능을 포함하지 않습니다.</p></section>
 
-    <section aria-labelledby="section-9">
-      <h2 id="section-9">9. 방침 변경 및 문의</h2>
-      <p>광고 기능, 로그인, 서버 저장, 결제 또는 데이터 처리 방식이 변경되면 방침과 Google Play Data Safety 안내를 함께 검토·갱신합니다. 개인정보 처리 문의: <strong>hello.nolsorok@gmail.com</strong> (놀소록 · NOLSOROK).</p>
-    </section>
+    <section><h2>9. 보관 및 삭제</h2><p>사주 프로필과 기존 앱 기록은 앱의 <code>내 데이터 삭제</code> 기능으로 제거할 수 있습니다. 이 기능은 Analytics 동의 상태나 이미 Google에 전송된 분석 정보를 삭제하지 않습니다. 동의 상태는 앱 정보에서 변경할 수 있고, 앱 데이터 삭제 또는 앱 삭제 시 기기의 앱 전용 저장 정보와 함께 제거됩니다. 동의를 철회해도 이전에 전송된 집계·분석 정보가 즉시 소급 삭제되는 것은 아닙니다. Firebase 측 보관 기간과 삭제 절차는 운영 설정을 별도로 확인합니다.</p></section>
 
-    <footer>
-      <p>운명의 로또는 동행복권의 공식 앱이나 제휴 서비스가 아닙니다. 공개된 당첨결과를 조회하는 독립적인 서비스이며, 운세와 번호 추천은 당첨을 보장하지 않습니다.</p>
-    </footer>
+    <section><h2>10. Android 백업</h2><p>앱은 <code>android:allowBackup=false</code>로 설정되어 있으며, 백업·데이터 추출 규칙에서 SharedPreferences를 포함한 앱 저장 영역을 클라우드 백업과 기기 간 전송 대상에서 제외하도록 구성합니다. 운영체제와 제조사별 실제 동작에는 차이가 있을 수 있습니다.</p></section>
+
+    <section><h2>11. 아동 관련 안내</h2><p>현재 앱은 계정 또는 연령 확인 기능을 제공하지 않습니다. 사주 계산용 생년월일 입력을 이용 연령 확인으로 사용하지 않습니다. 배포 대상 연령과 아동 관련 Google Play 설정은 출시 전 별도로 결정합니다.</p></section>
+
+    <section><h2>12. 보안 조치</h2><p>입력 정보는 앱 전용 로컬 저장 영역에 보관하고 Android 백업·기기 전송에서 제외하도록 설정합니다. Google은 Firebase Analytics 데이터가 전송 중 TLS로 보호된다고 안내합니다. 앱 이용자는 기기 잠금과 운영체제 업데이트를 유지할 수 있습니다.</p></section>
+
+    <section><h2>13. 방침 변경</h2><p>앱 기능, 외부 서비스, 수집 항목 또는 처리 방식이 달라지면 이 방침과 Google Play Data Safety 안내를 함께 갱신합니다.</p></section>
+
+    <section><h2>14. 문의 및 시행일</h2><ul><li>운영자: 놀소록 · NOLSOROK</li><li>개인정보 문의: <a href="mailto:hello.nolsorok@gmail.com">hello.nolsorok@gmail.com</a></li><li>시행일: <strong>[실제 게시일 입력]</strong></li></ul></section>
+
+    <h2>관련 공식 안내</h2>
+    <ul>
+      <li><a href="https://firebase.google.com/docs/analytics/android/configure-data-collection">Firebase Analytics 수집 제어</a></li>
+      <li><a href="https://support.google.com/analytics/answer/11582702">Firebase Analytics의 Play 데이터 공개 안내</a></li>
+      <li><a href="https://support.google.com/googleplay/android-developer/answer/10787469">Google Play Data Safety 작성 기준</a></li>
+    </ul>
   </main>
 </body>
 </html>
